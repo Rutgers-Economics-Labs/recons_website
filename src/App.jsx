@@ -13,10 +13,12 @@ import DRP from './pages/DRP';
 import RFP from './pages/RFP';
 import BuddyProgram from './pages/BuddyProgram';
 import ReviewJournal from './pages/ReviewJournal';
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col bg-gray-100">
         <Header />
         <main className="flex-grow">
