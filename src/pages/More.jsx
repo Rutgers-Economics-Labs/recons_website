@@ -1,4 +1,5 @@
 import React from 'react';
+import PageMeta from '../components/PageMeta';
 
 const ResourceBox = ({ title, desc, link }) => (
   <div className="group relative bg-white border border-black p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] flex flex-col h-full">
@@ -18,6 +19,11 @@ const ResourceBox = ({ title, desc, link }) => (
 const More = () => {
   return (
     <div className="flex flex-col min-h-screen">
+      <PageMeta 
+        title="More Resources"
+        description="Additional resources for economics students including introductory courses, data sources, and helpful tools for learning economics at Rutgers."
+        path="/more"
+      />
       
       {/* Additional Resources */}
       <section className="bg-[#fafafa] py-24 px-8 border-b border-black/5">

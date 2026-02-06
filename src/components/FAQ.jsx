@@ -68,8 +68,8 @@ const FAQ = () => {
       )
     },
     {
-      question: "I've heard about REL. When do applications open?",
-      answer: "Applications for REL typically open once at the start of each semester and remain open for about two weeks. For Spring 2026, applications close on February 6th."
+      question: <>I've heard about <a href="https://www.rutgerseconomics.org/" target="_blank" rel="noopener noreferrer" className="hover:underline font-semibold">REL</a>. When do applications open?</>,
+      answer: <>Applications for <a href="https://www.rutgerseconomics.org/" target="_blank" rel="noopener noreferrer" className="hover:underline font-semibold">REL</a> typically open once at the start of each semester and remain open for about two weeks. For Spring 2026, applications close on February 6th.</>
     },
     {
       question: "When do board applications open?",

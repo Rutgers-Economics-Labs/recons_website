@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import PageMeta from '../components/PageMeta';
 
 const InitiativeCard = ({ title, description, links = [] }) => {
   const isPlaceholder = links.length === 1 && !links[0].url;
@@ -109,6 +110,11 @@ const Initiatives = () => {
 
   return (
     <div className="bg-[#fafafa] min-h-screen py-24 px-8 text-black">
+      <PageMeta 
+        title="Initiatives"
+        description="Explore RECONS initiatives including the Buddy Program, Policython competition, Research Fellowship, Review Journal, and Rutgers Economics Labs."
+        path="/initiatives"
+      />
       <div className="max-w-6xl mx-auto">
         
         <div className="mb-24 border-l-4 border-black pl-8">

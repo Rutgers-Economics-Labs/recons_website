@@ -1,8 +1,14 @@
 import React from 'react';
+import PageMeta from '../components/PageMeta';
 
 const RFP = () => {
   return (
     <div className="bg-[#fafafa] min-h-screen py-24 px-8 text-black">
+      <PageMeta 
+        title="Research Fellowship Program"
+        description="Join a cohort of undergraduates co-authoring an academic research paper in economics at Rutgers University."
+        path="/rfp"
+      />
       <div className="max-w-6xl mx-auto">
         
         {/* Header*/}

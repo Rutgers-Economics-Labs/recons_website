@@ -1,6 +1,13 @@
+import PageMeta from '../components/PageMeta';
+
 const DRP = () => {
   return (
     <div className="bg-[#fafafa] min-h-screen py-24 px-8 text-black">
+      <PageMeta 
+        title="Directed Reading Program"
+        description="Learn about RECONS' Directed Reading Program, which matches graduate economics students with undergraduates for self-study on economics topics."
+        path="/drp"
+      />
       <div className="max-w-6xl mx-auto">
         
         {/* Header*/}
