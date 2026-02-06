@@ -1,8 +1,14 @@
 import React from 'react';
+import PageMeta from '../components/PageMeta';
 
 const BuddyProgram = () => {
   return (
     <div className="bg-[#fafafa] min-h-screen py-24 px-8 text-black">
+      <PageMeta 
+        title="Buddy Program"
+        description="Connecting underclassmen with experienced upperclassmen mentors to navigate the economics major and career paths at Rutgers."
+        path="/bp"
+      />
       <div className="max-w-6xl mx-auto">
         
         {/* Header Section */}

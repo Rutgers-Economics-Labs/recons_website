@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import aboutBg from '../assets/hc_aerial.jpeg'; 
+import PageMeta from '../components/PageMeta'; 
 
 const About = () => {
   const offerings = [
@@ -22,6 +23,11 @@ const About = () => {
 
   return (
     <div className="bg-white font-serif overflow-x-hidden text-black">
+      <PageMeta 
+        title="About Us"
+        description="Learn about RECONS' philosophy and what we offer to economics students at Rutgers University, including competitions, guest speakers, internship panels, and professional development."
+        path="/about"
+      />
       
       {/* Hero */}
       <section className="relative w-full h-[55vh] flex items-center justify-center px-8 overflow-hidden bg-black">

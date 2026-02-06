@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Mail } from 'lucide-react';
+import PageMeta from '../components/PageMeta';
 
 import k_latinovic from '../assets/photos/k_latinovic.jpg';
 import n_karthikeyan from '../assets/photos/n_karthikeyan.jpg';
@@ -90,6 +91,11 @@ const ReviewJournal = () => {
 
   return (
     <div className="bg-white min-h-screen text-black font-serif">
+      <PageMeta 
+        title="RECONS Journal"
+        description="The RECONS Journal transforms undergraduate economics research papers into accessible articles. Submit your work for our publication."
+        path="/rj"
+      />
       {/* Hero*/}
       <section className="pt-24 pb-12 px-8">
         <div className="max-w-6xl mx-auto">

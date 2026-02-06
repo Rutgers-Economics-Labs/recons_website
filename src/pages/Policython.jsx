@@ -1,4 +1,5 @@
 import { ExternalLink } from 'lucide-react';
+import PageMeta from '../components/PageMeta';
 
 const DetailItem = ({ label, value }) => (
   <div className="border-b border-black/10 py-4 flex justify-between items-center">
@@ -10,6 +11,11 @@ const DetailItem = ({ label, value }) => (
 const Policython = () => {
   return (
     <div className="bg-[#fafafa] min-h-screen text-black">
+      <PageMeta 
+        title="Policython"
+        description="The first interdisciplinary, data-driven policy competition at Rutgers, bringing students together to address challenges facing New Jersey residents."
+        path="/policython"
+      />
       <div className="max-w-6xl mx-auto pt-20 pb-12 px-8">
         {/* Header Section */}
         <div className="mb-16">

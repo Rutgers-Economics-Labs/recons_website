@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import Calendar from '../components/Calendar';
 import FAQ from '../components/FAQ';
+import PageMeta from '../components/PageMeta';
 import { CLUB_EVENTS } from '../data/events';
 
 const MailingList = () => {
@@ -106,6 +107,11 @@ const Home = () => {
 
   return (
     <div className="bg-[#fafafa] font-serif relative">
+      <PageMeta 
+        title="Home"
+        description="RECONS is the premier economics organization at Rutgers University, hosting events, competitions, and initiatives to support economics students in their academic and professional journey."
+        path="/"
+      />
       <Hero />
 
       {/* Mission */}

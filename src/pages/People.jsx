@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import PageMeta from '../components/PageMeta';
 import e_wenz from '../assets/photos/ewenz.jpg';
 import n_faruk from '../assets/photos/n_faruk.jpg';
 import p_wolfsohn from '../assets/photos/p_wolfsohn.jpg';
@@ -66,14 +67,19 @@ const People = () => {
   const initiativeLeaders = [
     { name: "Annabelle Hinks", position: "DRP Coordinator", email: "ajh291@scarletmail.rutgers.edu", linkedin: "https://www.linkedin.com/in/annabelle-hinks/", image: a_hinks },
     { name: "Katarina Latinović", position: "Research Journal Editor-In-Chief", email: "kl1232@scarletmail.rutgers.edu", linkedin: "https://www.linkedin.com/in/katarina-latinovic-a49028288/", image: k_latinovic },
-    { name: "Kushaan Jain", position: "REL President", email: "kj448@scarletmail.rutgers.edu", linkedin: "https://www.linkedin.com/in/kushaanjain/", image: k_jain },
-    { name: "Akash Dubey", position: "REL Research Director", email: "ad2046@scarletmail.rutgers.edu", linkedin: "https://www.linkedin.com/in/akash-dubey-your-boss/", image: a_dubey },
+    { name: "Kushaan Jain", position: <a href="https://www.rutgerseconomics.org/" target="_blank" rel="noopener noreferrer" className="hover:underline">REL President</a>, email: "kj448@scarletmail.rutgers.edu", linkedin: "https://www.linkedin.com/in/kushaanjain/", image: k_jain },
+    { name: "Akash Dubey", position: <a href="https://www.rutgerseconomics.org/" target="_blank" rel="noopener noreferrer" className="hover:underline">REL Research Director</a>, email: "ad2046@scarletmail.rutgers.edu", linkedin: "https://www.linkedin.com/in/akash-dubey-your-boss/", image: a_dubey },
     { name: "Salil Garud", position: "Newsletter Co-Editor-In-Chief", email: "ssg163@scarletmail.rutgers.edu", linkedin: "https://www.linkedin.com/in/salilgarud/", image: s_garud },
     { name: "Sanjana Pundru", position: "Newsletter Co-Editor-In-Chief", email: "sp2425@scarletmail.rutgers.edu", linkedin: "https://www.linkedin.com/in/sanjana-pundru/", image: s_pundru},
   ];
 
   return (
     <div className="bg-white min-h-screen font-serif">
+      <PageMeta 
+        title="People"
+        description="Meet the RECONS Executive Board and Initiative Leaders at Rutgers University, including our President, Treasurer, REL President, and other dedicated team members."
+        path="/people"
+      />
       
       {/* Hero Section */}
       <section className="pt-32 pb-16 border-b border-black/5 bg-[#fafafa]">
