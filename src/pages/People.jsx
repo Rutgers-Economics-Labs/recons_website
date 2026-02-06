@@ -67,8 +67,8 @@ const People = () => {
   const initiativeLeaders = [
     { name: "Annabelle Hinks", position: "DRP Coordinator", email: "ajh291@scarletmail.rutgers.edu", linkedin: "https://www.linkedin.com/in/annabelle-hinks/", image: a_hinks },
     { name: "Katarina Latinović", position: "Research Journal Editor-In-Chief", email: "kl1232@scarletmail.rutgers.edu", linkedin: "https://www.linkedin.com/in/katarina-latinovic-a49028288/", image: k_latinovic },
-    { name: "Kushaan Jain", position: <a href="https://www.rutgerseconomics.org/" target="_blank" rel="noopener noreferrer" className="hover:underline">REL President</a>, email: "kj448@scarletmail.rutgers.edu", linkedin: "https://www.linkedin.com/in/kushaanjain/", image: k_jain },
-    { name: "Akash Dubey", position: <a href="https://www.rutgerseconomics.org/" target="_blank" rel="noopener noreferrer" className="hover:underline">REL Research Director</a>, email: "ad2046@scarletmail.rutgers.edu", linkedin: "https://www.linkedin.com/in/akash-dubey-your-boss/", image: a_dubey },
+    { name: "Kushaan Jain", position: "REL President", email: "kj448@scarletmail.rutgers.edu", linkedin: "https://www.linkedin.com/in/kushaanjain/", image: k_jain, relLink: true },
+    { name: "Akash Dubey", position: "REL Research Director", email: "ad2046@scarletmail.rutgers.edu", linkedin: "https://www.linkedin.com/in/akash-dubey-your-boss/", image: a_dubey, relLink: true },
     { name: "Salil Garud", position: "Newsletter Co-Editor-In-Chief", email: "ssg163@scarletmail.rutgers.edu", linkedin: "https://www.linkedin.com/in/salilgarud/", image: s_garud },
     { name: "Sanjana Pundru", position: "Newsletter Co-Editor-In-Chief", email: "sp2425@scarletmail.rutgers.edu", linkedin: "https://www.linkedin.com/in/sanjana-pundru/", image: s_pundru},
   ];
@@ -114,6 +114,19 @@ const People = () => {
             {initiativeLeaders.map((person, i) => (
               <PersonCard key={`lead-${i}`} {...person} index={i} />
             ))}
+          </div>
+          <div className="mt-8 text-center text-sm text-gray-600 italic">
+            <p>
+              REL (Rutgers Economics Labs) is a separate organization. Learn more at{' '}
+              <a 
+                href="https://www.rutgerseconomics.org/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-black font-semibold hover:underline"
+              >
+                rutgerseconomics.org
+              </a>
+            </p>
           </div>
         </div>
         
