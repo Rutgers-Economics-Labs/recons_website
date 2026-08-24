@@ -3,6 +3,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Calendar as CalendarIcon, Clock, MapPin } from 'lucide-react';
 import { CLUB_EVENTS } from '../data/events';
 
+const CATEGORY_COLORS = {
+  recons: "bg-black",
+  department: "bg-green-600",
+  rel: "bg-red-600",
+  rfp: "bg-blue-600",
+  wie: "bg-yellow-400",
+};
+
 const Calendar = () => {
   const [selectedDate, setSelectedDate] = useState(null);
   
@@ -30,9 +38,14 @@ const Calendar = () => {
   const isCurrentMonth = now.getMonth() === monthIdx && now.getFullYear() === year;
   const todayDate = now.getDate();
 
-  // Jan to May navigation only
-  const nextMonth = () => { if (monthIdx < 4) setViewDate(new Date(year, monthIdx + 1, 1)); };
-  const prevMonth = () => { if (monthIdx > 0) setViewDate(new Date(year, monthIdx - 1, 1)); };
+  // Indefinite month navigation
+  const nextMonth = () => {
+  setViewDate(new Date(year, monthIdx + 1, 1));
+};
+
+const prevMonth = () => {
+  setViewDate(new Date(year, monthIdx - 1, 1));
+};
 
   const firstDayOfMonth = new Date(year, monthIdx, 1).getDay();
   const daysInMonth = new Date(year, monthIdx + 1, 0).getDate();
@@ -53,8 +66,7 @@ const Calendar = () => {
             <div className="flex items-center gap-6 border-b border-black pb-2">
               <button 
                 onClick={prevMonth} 
-                disabled={monthIdx === 0} 
-                className={`transition-opacity ${monthIdx === 0 ? 'opacity-10' : 'hover:opacity-50'}`}
+                className="transition-opacity hover:opacity-50"
               >
                 <ChevronLeft size={18} strokeWidth={1.5} />
               </button>
@@ -63,8 +75,7 @@ const Calendar = () => {
               </span>
               <button 
                 onClick={nextMonth} 
-                disabled={monthIdx === 4} 
-                className={`transition-opacity ${monthIdx === 4 ? 'opacity-10' : 'hover:opacity-50'}`}
+                className="transition-opacity hover:opacity-50"
               >
                 <ChevronRight size={18} strokeWidth={1.5} />
               </button>
@@ -101,15 +112,47 @@ const Calendar = () => {
                   </span>
                   {event && (
                     <div className="absolute inset-x-2 bottom-3">
-                      <div className="hidden md:block text-[8px] uppercase tracking-tighter leading-tight text-black group-hover:text-white line-clamp-1 italic">
-                        {event.title}
+                      <div className="hidden md:flex items-center gap-1.5">
+                        <span
+                          className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${
+                            CATEGORY_COLORS[event.category] || CATEGORY_COLORS.recons
+                          }`}
+                        />
+                        <span className="text-[8px] uppercase tracking-tighter leading-tight text-black group-hover:text-white line-clamp-1 italic">
+                          {event.title}
+                        </span>
                       </div>
-                      <div className="md:hidden w-1.5 h-1.5 bg-black group-hover:bg-white rounded-full mx-auto" />
+
+                      <div
+                        className={`md:hidden w-1.5 h-1.5 rounded-full mx-auto ${
+                          CATEGORY_COLORS[event.category] || CATEGORY_COLORS.recons
+                        }`}
+                      />
                     </div>
                   )}
                 </div>
               );
             })}
+          </div>
+
+          {/* Event Category Legend */}
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 mt-6">
+            {[
+              { label: 'RECONS', category: 'recons' },
+              { label: 'Economics Department', category: 'department' },
+              { label: 'REL', category: 'rel' },
+              { label: 'RFP', category: 'rfp' },
+              { label: 'Women in Economics', category: 'wie' },
+            ].map(({ label, category }) => (
+              <div key={category} className="flex items-center gap-2">
+                <span
+                  className={`w-2 h-2 rounded-full ${CATEGORY_COLORS[category]}`}
+                />
+                <span className="text-[9px] uppercase tracking-[0.15em] text-black/60">
+                  {label}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
