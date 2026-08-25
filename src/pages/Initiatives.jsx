@@ -93,7 +93,7 @@ const Initiatives = () => {
       number: "03",
       title: "Women in Economics",
       description:
-        "A new initiative supporting students through mentorship, professional development, and opportunities within economics.",
+        "A student-led organization fostering community, mentorship, and development for women interested in economics.",
       links: [
         { text: "Coming Fall 2026", url: "" }
       ]

@@ -16,6 +16,9 @@ import s_parsa from '../assets/photos/s_parsa.jpg';
 import c_dsouza from '../assets/photos/cdsouza.jpg';
 import b_abrams from '../assets/photos/babrams.jpg';
 import a_hinks from '../assets/photos/a_hinks.jpg';
+import a_rianna from '../assets/photos/a_rianna.jpg';
+import e_fishkin from '../assets/photos/e_fishkin.jpg';
+import e_vegesine from '../assets/photos/e_vegesine.jpg';
 
 
 const getInitials = (name) => {
@@ -159,7 +162,8 @@ const People = () => {
           name: 'Eshan Vegesine',
           position: 'Webmaster',
           email: 'ev314@scarletmail.rutgers.edu',
-          linkedin: 'https://www.linkedin.com/in/eshan-vegesine/'
+          linkedin: 'https://www.linkedin.com/in/eshan-vegesine/',
+          image: e_vegesine
         }
       ],
 
@@ -175,13 +179,15 @@ const People = () => {
           name: 'Audri Rianna',
           position: 'Research Fellowship',
           email: 'ar2462@scarletmail.rutgers.edu',
-          linkedin: 'https://www.linkedin.com/in/audri-rianna-15361b207/'
+          linkedin: 'https://www.linkedin.com/in/audri-rianna-15361b207/',
+          image: a_rianna
         },
         {
           name: 'Emilie Fishkin',
           position: 'Women in Economics',
           email: 'eaf165@scarletmail.rutgers.edu',
-          linkedin: 'https://www.linkedin.com/in/emilie-fishkin/'
+          linkedin: 'https://www.linkedin.com/in/emilie-fishkin/',
+          image: e_fishkin
         }
       ]
     },

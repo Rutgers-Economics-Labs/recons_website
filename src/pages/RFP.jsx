@@ -49,17 +49,9 @@ const RFP = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-8 border-t border-black/10">
                 <div>
-                  <h4 className="text-sm font-bold uppercase tracking-widest mb-4">Academic Prerequisite</h4>
-                  <p className="text-sm text-gray-600 font-serif leading-relaxed">
-                    A prerequisite for the program is having completed <span className="text-black font-bold italic">Econometrics (01:220:322)</span>. 
-                    While this is the standard requirement, exceptions may be made for students demonstrating 
-                    equivalent quantitative proficiency.
-                  </p>
-                </div>
-                <div>
                   <h4 className="text-sm font-bold uppercase tracking-widest mb-4">Application Process</h4>
                   <p className="text-sm text-gray-600 font-serif leading-relaxed">
-                    The selection process is rigorous. Applicants are typically required to 
+                    Te selection process is rigorous. Applicants are typically required to 
                     submit a professional resume and may be asked to provide additional written 
                     responses or participate in an interview with the Managing Fellow.
                   </p>
