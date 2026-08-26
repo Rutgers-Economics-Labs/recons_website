@@ -19,6 +19,8 @@ import a_hinks from '../assets/photos/a_hinks.jpg';
 import a_rianna from '../assets/photos/a_rianna.jpg';
 import e_fishkin from '../assets/photos/e_fishkin.jpg';
 import e_vegesine from '../assets/photos/e_vegesine.jpg';
+import g_darko from '../assets/photos/g_darko.jpg';
+import trisha_patel from '../assets/photos/trisha_patel.jpg';
 
 
 const getInitials = (name) => {
@@ -150,13 +152,15 @@ const People = () => {
           name: 'Giselle Darko',
           position: 'VP of Marketing',
           email: 'gad136@scarletmail.rutgers.edu',
-          linkedin: 'https://www.linkedin.com/in/giselle-darko-7453762a3/'
+          linkedin: 'https://www.linkedin.com/in/giselle-darko-7453762a3/',
+          image: g_darko
         },
         {
           name: 'Trisha Patel',
           position: 'Secretary',
           email: 'tp790@scarletmail.rutgers.edu',
-          linkedin: 'https://www.linkedin.com/in/trishapatel260/'
+          linkedin: 'https://www.linkedin.com/in/trishapatel260/',
+          image: trisha_patel
         },
         {
           name: 'Eshan Vegesine',
@@ -170,7 +174,7 @@ const People = () => {
       initiativeLeaders: [
         {
           name: 'Akash Dubey',
-          position: 'Rutgers Economics Labs',
+          position: 'Rutgers Economics Labs President',
           email: 'ad2046@scarletmail.rutgers.edu',
           linkedin: 'https://www.linkedin.com/in/akash-dubey-your-boss/',
           image: a_dubey
