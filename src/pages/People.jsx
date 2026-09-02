@@ -21,7 +21,8 @@ import e_fishkin from '../assets/photos/e_fishkin.jpg';
 import e_vegesine from '../assets/photos/e_vegesine.jpg';
 import g_darko from '../assets/photos/g_darko.jpg';
 import trisha_patel from '../assets/photos/trisha_patel.jpg';
-
+import c_tang from '../assets/photos/c_tang.jpg';
+import p_williams from '../assets/photos/p_williams.jpg';
 
 const getInitials = (name) => {
   return name
@@ -192,6 +193,20 @@ const People = () => {
           email: 'eaf165@scarletmail.rutgers.edu',
           linkedin: 'https://www.linkedin.com/in/emilie-fishkin/',
           image: e_fishkin
+        },
+        {
+          name: 'Crystal Tang',
+          position: 'Newsletter Co-Editor-In-Chief & Director of Competitions',
+          email: 'wt233@scarletmail.rutgers.edu',
+          linkedin: 'https://www.linkedin.com/in/crystal-t-a4769b237/',
+          image: c_tang
+        },
+        {
+          name: 'Parker Williams',
+          position: 'Newsletter Co-Editor-In-Chief',
+          email: 'ptw24@scarletmail.rutgers.edu',
+          linkedin: 'https://www.linkedin.com/in/parkerwilliams19/',
+          image: p_williams
         }
       ]
     },

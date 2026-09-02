@@ -76,9 +76,9 @@ const Hero = () => {
                 A professional organization run by driven and successful economics students at Rutgers University.
               </p>
 
-              {/* GetInvolved */}
+              {/* Suitable */}
               <a 
-                href="https://rutgers.campuslabs.com/engage/organization/recons" 
+                href="https://app.suitable.co/student-organizations/zZOSYmMse8vL" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-10 px-10 py-5 bg-white text-black hover:bg-black hover:text-white border border-white transition-all duration-700"

@@ -77,7 +77,7 @@ const Initiatives = () => {
       description:
         "Connecting underclassmen with experienced upperclassmen mentors to navigate the economics major and career paths.",
       links: [
-        { text: "Coming Fall 2026", url: "" }
+        { text: "Learn More", url: "/bp" }
       ]
     },
     {
@@ -95,7 +95,7 @@ const Initiatives = () => {
       description:
         "A student-led organization fostering community, mentorship, and development for women interested in economics.",
       links: [
-        { text: "Coming Fall 2026", url: "" }
+        { text: "Learn More", url: "/wie" }
       ]
     },
     {

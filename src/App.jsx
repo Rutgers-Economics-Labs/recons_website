@@ -9,6 +9,7 @@ import More from "./pages/More";
 import Footer from "./components/Footer";
 
 import Policython from './pages/Policython';
+import WiE from './pages/WomenInEconomics';
 import DRP from './pages/DRP';
 import RFP from './pages/RFP';
 import BuddyProgram from './pages/BuddyProgram';
@@ -33,6 +34,7 @@ function App() {
             <Route path="/rfp" element={<RFP />} />
             <Route path="/bp" element={<BuddyProgram />} />
             <Route path="/rj" element={<ReviewJournal />} />
+            <Route path="/wie" element={<WiE />} />
             <Route path="*" element={<Home />} />
           </Routes>
         </main>

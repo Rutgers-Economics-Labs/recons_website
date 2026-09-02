@@ -45,7 +45,7 @@ const FAQ = () => {
     },
     {
       question: "When and where are club meetings?",
-      answer: "General club meetings are held on Wednesdays, typically every other week. For the Spring 2026 semester, most meetings are in CASC 411AB. This schedule does not apply to separate club initiatives."
+      answer: "General club meetings are held on Wednesdays, typically every other week. For the Fall 2026 semester, most meetings are in CASC 411AB. This schedule does not apply to separate club initiatives."
     },
     {
       question: "How can I get involved with club initiatives?",
@@ -69,7 +69,7 @@ const FAQ = () => {
     },
     {
       question: <>I've heard about <a href="https://www.rutgerseconomics.org/" target="_blank" rel="noopener noreferrer" className="hover:underline font-semibold">REL</a>. When do applications open?</>,
-      answer: <>Applications for <a href="https://www.rutgerseconomics.org/" target="_blank" rel="noopener noreferrer" className="hover:underline font-semibold">REL</a> typically open once at the start of each semester and remain open for about two weeks. For Spring 2026, applications close on February 6th.</>
+      answer: <>Applications for <a href="https://www.rutgerseconomics.org/" target="_blank" rel="noopener noreferrer" className="hover:underline font-semibold">REL</a> typically open once at the start of each semester and remain open for about two weeks.</>
     },
     {
       question: "When do board applications open?",

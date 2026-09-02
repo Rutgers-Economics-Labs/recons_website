@@ -24,7 +24,7 @@ const MailingList = () => {
         {/* Container */}
         <div className="w-full max-w-3xl">
           <form 
-            action="https://weebly.us15.list-manage.com/subscribe/post?u=e7911be6e88b1072020be10f5&id=c3d7ea720f&f_id=006176e0f0" 
+            action="https://app.suitable.co/student-organizations/zZOSYmMse8vL?tab=profile&filters=%7B%22query%22:%20null,%20%22orderBy%22:%20null,%20%22context%22:%20%5B%5D%7D" 
             method="post" 
             id="mc-embedded-subscribe-form"
             name="mc-embedded-subscribe-form"
