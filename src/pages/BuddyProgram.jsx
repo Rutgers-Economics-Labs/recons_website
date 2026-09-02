@@ -121,7 +121,7 @@ const BuddyProgram = () => {
           </p>
 
           <h3 className="text-2xl md:text-3xl font-serif">
-            Applications close September 5th
+            Applications close September 5th 
           </h3>
         </div>
 
