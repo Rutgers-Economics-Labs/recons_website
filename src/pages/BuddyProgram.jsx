@@ -75,16 +75,12 @@ const BuddyProgram = () => {
                   text: "Successful completion of the Economics Major Core: Intro/Intermediate Macro and Micro, and Econometrics." 
                 },
                 { 
-                  label: "Campus Presence", 
-                  text: "Active involvement on campus, with a strong preference for leaders in Economics-related organizations or research groups." 
-                },
-                { 
                   label: "Professional Experience", 
                   text: "Previous internship or work experience to give insight to mentees on navigating career paths." 
                 },
                 { 
                   label: "Program Commitment", 
-                  text: "A dedication to regular 1-on-1 meetings with mentees and attendance at mandatory Buddy Program community events." 
+                  text: "A dedication to regular 1-on-1 meetings with mentees and attendance at Buddy Program community events." 
                 }
               ].map((item, idx) => (
                 <div
